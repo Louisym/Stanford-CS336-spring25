@@ -1,0 +1,26 @@
+{
+  "results": [
+    {
+      "Size": "2.7B",
+      "Mode": "forward",
+      "d_model": 2560,
+      "d_ff": 10240,
+      "num_layers": 32,
+      "num_heads": 32,
+      "Context Length": 128,
+      "Avg Time (s)": 0.144852,
+      "Std Dev (s)": 0.025074,
+      "Warmup Steps": 5
+    }
+  ],
+  "completed_tasks": [
+    {
+      "d_ff": 10240,
+      "d_model": 2560,
+      "mode": "forward",
+      "num_heads": 32,
+      "num_layers": 32,
+      "size": "2.7B"
+    }
+  ]
+}

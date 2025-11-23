@@ -1,0 +1,18 @@
+[project]
+name = "cs336-scaling"
+version = "1.0.0"
+description = "CS 336 Assignment 3: Scaling Laws"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "requests>=2.32.3",
+    "torch>=2.7.0",
+]
+
+[tool.uv]
+package = true
+python-preference = "managed"
+
+
+[tool.setuptools.packages.find]
+include = ["cs336_basics"]

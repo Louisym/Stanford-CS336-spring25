@@ -1,0 +1,15 @@
+
+Running the following configurations:
+  - {'size': 'small', 'd_model': 768, 'd_ff': 3072, 'num_layers': 12, 'num_heads': 12}
+  - {'size': 'medium', 'd_model': 1024, 'd_ff': 4096, 'num_layers': 24, 'num_heads': 16}
+  - {'size': 'large', 'd_model': 1280, 'd_ff': 5120, 'num_layers': 36, 'num_heads': 20}
+  - {'size': 'xl', 'd_model': 1600, 'd_ff': 6400, 'num_layers': 48, 'num_heads': 25}
+  - {'size': '2.7B', 'd_model': 2560, 'd_ff': 10240, 'num_layers': 32, 'num_heads': 32}
+
+  - small [forward]: Avg Time = 0.019330s, Std Dev = 0.007064s
+  - small [forward_and_backward]: Avg Time = 0.419663s, Std Dev = 1.136629s
+  - medium [forward]: Avg Time = 0.049339s, Std Dev = 0.009543s
+  - medium [forward_and_backward]: Avg Time = 2.197618s, Std Dev = 4.294628s
+  - large [forward]: Avg Time = 0.403504s, Std Dev = 0.950123s
+  - large [forward_and_backward]: Avg Time = 8.894882s, Std Dev = 11.148697s
+  - xl [forward]: Avg Time = 0.879460s, Std Dev = 1.407289s

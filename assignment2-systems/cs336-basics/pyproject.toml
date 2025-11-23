@@ -1,0 +1,44 @@
+[project]
+name = "cs336_basics"
+version = "1.0.3"
+description = "CS336 Assignment 1"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "einops>=0.8.1",
+    "einx>=0.3.0",
+    "jaxtyping>=0.3.0",
+    "numpy",
+    "psutil>=6.1.1",
+    "pytest>=8.3.4",
+    "regex>=2024.11.6",
+    "submitit>=1.5.2",
+    "tiktoken>=0.9.0",
+
+    "torch>=2.8.0",  # PyTorch 2.8.0+ has sm_120 support
+
+    "tqdm>=4.67.1",
+    "wandb>=0.19.7",
+]
+
+[tool.setuptools.packages.find]
+include = ["cs336_basics"]
+
+[tool.uv]
+package = true
+python-preference = "managed"
+
+[tool.pytest.ini_options]
+log_cli = true
+log_cli_level = "WARNING"
+addopts = "-s"
+
+[tool.ruff]
+line-length = 120
+
+[tool.ruff.lint.extend-per-file-ignores]
+"__init__.py" = ["E402", "F401", "F403", "E501"]
+
+[tool.ruff.lint]
+extend-select = ["UP"]
+ignore = ["F722"]

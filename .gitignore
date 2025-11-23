@@ -1,0 +1,54 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Data and Models (already deleted, but in case)
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+data/
+models/
+*.tar.gz
+*.zip
+*.7z
+
+# Weights & Biases
+wandb/
+
+# Temporary files
+*.log
+*.tmp
+temp/
+tmp/
